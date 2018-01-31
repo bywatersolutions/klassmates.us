@@ -4,7 +4,7 @@ bio:                'Koha Klassmates, free Koha hosting for education by ByWater
 description:        "A fre service for library classrooms from ByWater Solutions"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "klassmates.us" # the base hostname & protocol for your site
+url: "https://bywatersolutions.github.io/klassmates.us/" # the base hostname & protocol for your site
 
 defaults:
 - scope:
