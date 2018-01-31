@@ -1,7 +1,7 @@
 ---
 layout: null
-title: Jekyll Theme - Home Page - Massively
-description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+title: Koha Klassmates - A free service for library classrooms from ByWater Solutions
+description: Klassmates from ByWater Solutions offers free Koha hosting for universities.
 sitemap:
     priority: 1.0
     lastmod: 2017-11-02
@@ -16,9 +16,7 @@ sitemap:
 -->
 <html>
 	<head>
-    {% include head.html %}
-
-
+        {% include head.html %}
 	</head>
 	<body class="is-loading">
 
@@ -27,10 +25,9 @@ sitemap:
 
 				<!-- Intro -->
 					<div id="intro">
-            <h1>{{site.title}}</h1>
-						<h2>The Jekyll Theme Version</h2>
-						<p>Massively is an HTML5 website theme designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
+                        <h1>{{site.title}}</h1>
+                        <h2>A free service for library classrooms from ByWater Solutions</h2>
+                        <p>Koha Klassmates is a service of <a href="http://bywatersolutions.com/">ByWater Solutions</a>, an open source community contributor and America’s forefront provider of Koha support.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -44,13 +41,13 @@ sitemap:
 				<!-- Nav -->
 					<nav id="nav">
 
-            {% include nav.html %}
+                        {% include nav.html %}
 
 						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                          <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+                          <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+                          <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+                          <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -58,68 +55,51 @@ sitemap:
 					<div id="main">
 						<!-- Featured Post -->
 							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Massively is a versatile Jekyll theme</a></h2>
-									<p>With only a few edits, you can have a stunningly beautiful website <br />
-                    nearly out of the box. Of course... you can always take it further <br />
-                    and make it something even more amazing!</p>
+								<header class="minor">
+									<h2>What We Do</h2>
 								</header>
-								<a href="#" class="image main"><img src="{{ "/images/pic01.jpg" | absolute_url }}" alt="" /></a>
-                <p>Regardless of your website's function, the homepage is what brings the user in.
-                  If it's anything short of intriguing, captivating, or just plain cool, you're out of luck and you might deter some visitors.</p>
-                <p>Your homepage must clearly describe what your site is about.
-									Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
-								</p>
-								<p>
-									In this manner, content in itself is a standout amongst the best promoting apparatuses in your whole advertising toolbox! Rather than making your content around your promoting technique, it's limitlessly more productive to fabricate your showcasing around your content.
-								 </p>
+                                <p>This service offers free hosted installations of the <a href="http://koha-community.org/">Koha Open Source ILS</a> to library school instructors for use in their classrooms. Using this service library school students can learn what it means to use a real ILS before entering the workforce.</p>
 
+								<header class="minor">
+									<h2>Who We Support</h2>
+								</header>
+                                <p>ByWater Solutions supports libraries using Koha around the globe through our first rate support services and via the Koha Klassmates program. <a href="#footer">Contact us</a> for more information on how you can join them.</p>
 							</article>
 
 						<!-- Posts -->
 							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
-                {% endfor %}
+                                {% for post in site.posts limit:3 %}
+                                    <article>
+                                        <header>
+                                            <span class="date">{{ post.date | date_to_string }}</span>
+                                            <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
+                                        </header>
+                                        <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                                        <p>{{ post.excerpt }}</p>
+                                        <ul class="actions">
+                                            <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+                                        </ul>
+                                    </article>
+                                {% endfor %}
 
 							</section>
 
 						<!-- Footer -->
 							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-                </ul>
+                                <ul class="actions">
+                                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
+                                </ul>
 							</footer>
-
 					</div>
 
 				<!-- Footer -->
-        {% include foot.html %}
+                {% include foot.html %}
 
 			</div>
 
 		<!-- Scripts -->
 		{% include scripts-main.html %}
-    {% include tracking.html %}
+        {% include tracking.html %}
 
 	</body>
 </html>

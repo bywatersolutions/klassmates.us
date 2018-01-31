@@ -1,10 +1,10 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+title:              Koha Klassmates
+bio:                'Koha Klassmates, free Koha hosting for education by ByWater Solutions'
+description:        "A fre service for library classrooms from ByWater Solutions"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "klassmates.us" # the base hostname & protocol for your site
 
 defaults:
 - scope:
@@ -41,9 +41,9 @@ instagram:          default
 github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           Santa Barbara, CA
+phone:              123-456-7890
+email:              info@klassmates.us
 
 # Gems
 gems:
