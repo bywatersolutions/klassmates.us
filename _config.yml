@@ -31,19 +31,19 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   default
+#disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+#analytics-id:       "default"
+twitter:            kohaklassmates
+#facebook:           default
+#instagram:          default
+#github:             default
 
 # personal
 location:           Santa Barbara, CA
 phone:              123-456-7890
-email:              info@klassmates.us
+email:              klassmates@bywatersolutions.com
 
 # Gems
 gems:
