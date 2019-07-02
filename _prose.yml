@@ -1,12 +1,13 @@
 prose:
-  rooturl: 'source/_posts'
-  media: 'source/images'
+  rooturl: '_posts'
+  media: 'images'
   ignore:
+    - index.md
     - _config.yml
     - /_layouts
     - /_includes
   metadata:
-    source/_posts:
+    _posts:
       - name: "layout"
         field:
           element: "hidden"
@@ -42,13 +43,3 @@ prose:
           label: "meta"
           element: "text"
           placeholder: "Enter metadata"
-    source/_static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
